@@ -19,6 +19,9 @@
     "prettier": "^3.6.2"
   },
   "dependencies": {
-    "mongoose": "^8.16.5"
+    "bcrypt": "^6.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.5",
+    "mongoose-aggregate-paginate-v2": "^1.1.4"
   }
 }
