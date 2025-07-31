@@ -3,7 +3,8 @@ import { User } from "../models/user.models.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import jwt from "jsonwebtoken";
 
-export const verifyJWT = asyncHandler(async(req, _, next) => {//(req, res , next) 
+export const verifyJWT = asyncHandler(async(req, _, next) => { //verifyJWT is a middleware function that checks if the request has a valid JWT token 
+    //(req, res , next) 
     try {
         const token = req.cookies?.accessToken || req.header("Authorization")?.replace("Bearer ", "");
         //console.log(token);
